@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .body-background {
+            background-image: url('https://placehold.co/1920x1080/A0B9BA/FFFFFF?text=Beautiful+Landscape'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 55vh; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white; 
+            position: relative; 
+        }
+        .body-background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(9, 113, 129, 0.5); 
+            z-index: 1;
+        }
+        .body-content {
+            position: relative;
+            z-index: 2; 
+            max-width: 900px;
+            padding: 2rem;
+            border-radius: 0.75rem; 
+            background-color: rgba(0, 0, 0, 0.3); 
+        }
+        .footer-table th, .footer-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #4a5568;
+        }
+        .footer-table th {
+            font-weight: 600;
+            color: #cbd5e0;
+        }
+        .footer-table a {
+            color: #90cdf4;
+            text-decoration: none;
+        }
+        .footer-table a:hover {
+            text-decoration: underline;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 10%;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <header class="bg-gray-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="mb-4 md:mb-0">
+                <img src="c:\Users\KIIT0001\Downloads\download (3).png" alt="AS" class="h-10 w-10 rounded-full object-cover">
+            </div>
+
+            <nav class="flex flex-wrap justify-center md:justify-start gap-4 md:gap-8 text-lg">
+                <a href="#" class="hover:text-blue-400 transition-colors duration-200 rounded-md p-2">Home</a>
+                <a href="#" class="hover:text-blue-400 transition-colors duration-200 rounded-md p-2">About</a>
+                <a href="#" class="hover:text-blue-400 transition-colors duration-200 rounded-md p-2">Services</a>
+                <a href="#" class="hover:text-blue-400 transition-colors duration-200 rounded-md p-2">Portfolio</a>
+                <a href="#" class="hover:text-blue-400 transition-colors duration-200 rounded-md p-2">Contact</a>
+            </nav>
+
+            <div class="mt-4 md:mt-0">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105">
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="body-background">
+        <div class="body-content">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-6"><b>Welcome to Santiago Bernabéu</b></h1>
+            <span>Created By <i>Arunabesh Sarkar<i></span>
+            <img src="c:\Users\KIIT0001\Desktop\WhatsApp Image 2025-05-26 at 00.50.30_a02ef302.jpg" width="50px" height="60px"class="center">
+        
+
+            <p class="text-lg md:text-xl leading-relaxed">
+                Real Madrid Club de Fútbol, sometimes known as Real Madrid, is a Spanish football club from Madrid, Spain
+            </p>
+            <p class="text-md md:text-lg mt-4">
+               Real Madrid is renowned for its extensive record of success, particularly in European football, and for attracting some of the world's top players, often referred to as "galácticos."
+            </p>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 p-8">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-semibold mb-4 text-white">About Us</h3>
+                <p class="text-gray-400">
+                    We are a company committed to excellence and innovation, striving to deliver top-notch services and products to our clients worldwide.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-4 text-white">Quick Links</h3>
+                <table class="w-full footer-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Links</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Company</td>
+                            <td><a href="#">Our Team</a><br><a href="#">Careers</a></td>
+                        </tr>
+                        <tr>
+                            <td>Support</td>
+                            <td><a href="#">FAQ</a><br><a href="#">Help Center</a></td>
+                        </tr>
+                        <tr>
+                            <td>Legal</td>
+                            <td><a href="#">Privacy Policy</a><br><a href="#">Terms of Service</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-4 text-white">Contact Us</h3>
+                <p class="text-gray-400">
+                    kol-700125,WestBengal<br>
+                    Email: sarkararunabesh1667@gmail.com<br>
+                    Phone: 7001634XXX
+                </p>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 mt-8 pt-4 border-t border-gray-700">
+            &copy; 2025 My Awesome Website. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
